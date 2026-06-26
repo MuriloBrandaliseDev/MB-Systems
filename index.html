@@ -51,7 +51,7 @@
           </span>
         </a>
 
-        <nav class="nav" id="nav">
+        <nav class="nav nav--desktop" id="navDesktop" aria-label="Menu principal">
           <ul class="nav__list">
             <li><a href="#hero" class="nav__link">Início</a></li>
             <li><a href="#sobre" class="nav__link">Sobre</a></li>
@@ -69,13 +69,32 @@
             <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
           </button>
           <a href="https://wa.me/5549999173932" class="btn btn--primary btn--sm header__cta" target="_blank" rel="noopener noreferrer">Fale conosco</a>
-          <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+          <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="navMobile">
             <span></span><span></span><span></span>
           </button>
         </div>
       </div>
     </div>
   </header>
+
+  <!-- Menu mobile fora do header (evita bug de backdrop-filter + position fixed) -->
+  <div class="nav-backdrop" id="navBackdrop" aria-hidden="true"></div>
+  <nav class="nav nav--mobile" id="navMobile" aria-label="Menu mobile">
+    <div class="nav-mobile__head">
+      <span class="nav-mobile__title">Menu</span>
+      <button class="nav-mobile__close" id="navClose" aria-label="Fechar menu">✕</button>
+    </div>
+    <ul class="nav__list">
+      <li><a href="#hero" class="nav__link">Início</a></li>
+      <li><a href="#sobre" class="nav__link">Sobre</a></li>
+      <li><a href="#servicos" class="nav__link">Serviços</a></li>
+      <li><a href="#produtos" class="nav__link">Produtos</a></li>
+      <li><a href="#projetos" class="nav__link">Projetos</a></li>
+      <li><a href="#clientes" class="nav__link">Clientes</a></li>
+      <li><a href="#contato" class="nav__link">Contato</a></li>
+    </ul>
+    <a href="https://wa.me/5549999173932" class="btn btn--primary nav-mobile__cta" target="_blank" rel="noopener noreferrer">Fale conosco</a>
+  </nav>
 
   <main>
     <!-- ===== HERO ===== -->

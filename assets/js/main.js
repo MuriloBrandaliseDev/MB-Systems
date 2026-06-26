@@ -83,30 +83,38 @@
 
   /* ---------- Menu mobile ---------- */
   const navToggle = $('#navToggle');
-  const nav = $('#nav');
-  let backdrop = $('.nav-backdrop');
-  if (!backdrop) {
-    backdrop = document.createElement('div');
-    backdrop.className = 'nav-backdrop';
-    document.body.appendChild(backdrop);
-  }
+  const navClose = $('#navClose');
+  const navMobile = $('#navMobile');
+  const backdrop = $('#navBackdrop');
+
   const closeMenu = () => {
-    nav && nav.classList.remove('is-open');
+    navMobile && navMobile.classList.remove('is-open');
     navToggle && navToggle.classList.remove('is-open');
-    backdrop.classList.remove('is-open');
+    backdrop && backdrop.classList.remove('is-open');
     navToggle && navToggle.setAttribute('aria-expanded', 'false');
-    document.body.style.overflow = '';
+    backdrop && backdrop.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('menu-open');
   };
-  if (navToggle && nav) {
+
+  const openMenu = () => {
+    navMobile && navMobile.classList.add('is-open');
+    navToggle && navToggle.classList.add('is-open');
+    backdrop && backdrop.classList.add('is-open');
+    navToggle && navToggle.setAttribute('aria-expanded', 'true');
+    backdrop && backdrop.setAttribute('aria-hidden', 'false');
+    document.body.classList.add('menu-open');
+  };
+
+  if (navToggle && navMobile) {
     navToggle.addEventListener('click', () => {
-      const open = nav.classList.toggle('is-open');
-      navToggle.classList.toggle('is-open', open);
-      backdrop.classList.toggle('is-open', open);
-      navToggle.setAttribute('aria-expanded', String(open));
-      document.body.style.overflow = open ? 'hidden' : '';
+      navMobile.classList.contains('is-open') ? closeMenu() : openMenu();
     });
-    backdrop.addEventListener('click', closeMenu);
-    $$('.nav__link').forEach((l) => l.addEventListener('click', closeMenu));
+    navClose && navClose.addEventListener('click', closeMenu);
+    backdrop && backdrop.addEventListener('click', closeMenu);
+    $$('.nav--mobile .nav__link, .nav-mobile__cta').forEach((l) => l.addEventListener('click', closeMenu));
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeMenu();
+    });
   }
 
   /* ---------- Reveal on scroll ---------- */
