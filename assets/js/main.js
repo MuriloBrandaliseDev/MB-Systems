@@ -274,44 +274,4 @@
     }, { passive: true });
   }
 
-  /* ---------- Validação do formulário ---------- */
-  const form = $('#contactForm');
-  const feedback = $('#formFeedback');
-  if (form) {
-    form.addEventListener('submit', (e) => {
-      e.preventDefault();
-      const nome = $('#nome');
-      const email = $('#email');
-      const msg = $('#mensagem');
-      let valid = true;
-
-      const check = (field, ok) => {
-        field.classList.toggle('invalid', !ok);
-        if (!ok) valid = false;
-      };
-      const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email.value.trim());
-      check(nome, nome.value.trim().length >= 2);
-      check(email, emailOk);
-      check(msg, msg.value.trim().length >= 5);
-
-      if (!valid) {
-        feedback.textContent = 'Por favor, preencha os campos corretamente.';
-        feedback.className = 'form-feedback err';
-        return;
-      }
-
-      // Sem back-end: abre o cliente de e-mail com a mensagem preenchida.
-      const assunto = $('#assunto').value.trim() || 'Contato pelo site';
-      const corpo =
-        `Nome: ${nome.value.trim()}%0D%0A` +
-        `E-mail: ${email.value.trim()}%0D%0A%0D%0A` +
-        `${msg.value.trim()}`;
-      window.location.href =
-        `mailto:contato@mbsystem.com.br?subject=${encodeURIComponent(assunto)}&body=${corpo}`;
-
-      feedback.textContent = 'Tudo certo! Abrimos seu e-mail para enviar a mensagem. 🚀';
-      feedback.className = 'form-feedback ok';
-      form.reset();
-    });
-  }
 })();
