@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#16314f" />
+  <title>MB System — Tecnologia & Soluções Digitais</title>
+  <meta name="description" content="MB System — Soluções digitais sob medida: desenvolvimento de software, web, mobile, automação e consultoria em tecnologia. Inovação com design e performance." />
+  <meta name="keywords" content="MB System, desenvolvimento de software, sites, sistemas, aplicativos, automação, tecnologia, TI" />
+  <meta name="author" content="MB System" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="MB System — Tecnologia & Soluções Digitais" />
+  <meta property="og:description" content="Soluções digitais sob medida para impulsionar a sua empresa." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="assets/img/logo.png" />
+
+  <link rel="icon" type="image/png" href="assets/img/logo.png" />
+  <link rel="apple-touch-icon" href="assets/img/logo.png" />
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+
+  <!-- ===== Preloader ===== -->
+  <div class="preloader" id="preloader">
+    <div class="preloader__logo">
+      <span>MB</span>
+      <div class="preloader__bar"><span></span></div>
+    </div>
+  </div>
+
+  <!-- ===== Barra de progresso de scroll ===== -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+
+  <!-- ===== Header / Navbar ===== -->
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__bar">
+        <a href="#hero" class="brand" aria-label="MB System — início">
+          <img src="assets/img/logo.png" alt="MB System" class="brand__logo" />
+          <span class="brand__text">
+            <span class="brand__name">MB<span>System</span></span>
+            <span class="brand__tag">Soluções Digitais</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="nav">
+          <ul class="nav__list">
+            <li><a href="#hero" class="nav__link">Início</a></li>
+            <li><a href="#sobre" class="nav__link">Sobre</a></li>
+            <li><a href="#servicos" class="nav__link">Serviços</a></li>
+            <li><a href="#produtos" class="nav__link">Produtos</a></li>
+            <li><a href="#projetos" class="nav__link">Projetos</a></li>
+            <li><a href="#clientes" class="nav__link">Clientes</a></li>
+            <li><a href="#contato" class="nav__link">Contato</a></li>
+          </ul>
+        </nav>
+
+        <div class="header__actions">
+          <button class="theme-toggle" id="themeToggle" aria-label="Alternar tema" title="Alternar tema claro/escuro">
+            <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20"><path d="M12 17a5 5 0 1 0 0-10 5 5 0 0 0 0 10zm0-13v2m0 14v2M4 12H2m20 0h-2M5.6 5.6 4.2 4.2m15.6 1.4 1.4-1.4M5.6 18.4l-1.4 1.4m15.6-1.4 1.4 1.4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+          </button>
+          <a href="#contato" class="btn btn--primary btn--sm header__cta">Fale conosco</a>
+          <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ===== HERO ===== -->
+    <section class="hero" id="hero">
+      <div class="hero__bg" aria-hidden="true">
+        <div class="hero__orb hero__orb--1"></div>
+        <div class="hero__orb hero__orb--2"></div>
+        <div class="hero__line"></div>
+      </div>
+
+      <div class="container hero__inner">
+        <div class="hero__content">
+          <span class="badge reveal" data-reveal>
+            <span class="badge__dot"></span> Inovação digital • Pegada 2026
+          </span>
+          <h1 class="hero__title reveal" data-reveal>
+            Transformamos <span class="text-gradient">ideias</span> em
+            <span class="text-gradient">software</span> de alto impacto.
+          </h1>
+          <p class="hero__text reveal" data-reveal>
+            A <strong>MB System</strong> desenvolve ERPs, plataformas corporativas, integrações e
+            soluções web sob medida — unindo design moderno, performance e tecnologia de ponta.
+          </p>
+
+          <div class="hero__tags reveal" data-reveal>
+            <span>ERP</span><span>Sistemas Web</span><span>Integrações</span><span>Automação</span><span>BI & Dashboards</span>
+          </div>
+
+          <div class="hero__actions reveal" data-reveal>
+            <a href="#projetos" class="btn btn--primary">Ver projetos</a>
+            <a href="#contato" class="btn btn--ghost">Iniciar um projeto</a>
+          </div>
+
+          <div class="hero__stats reveal" data-reveal>
+            <div class="stat-card">
+              <strong class="stat__num" data-count="35" data-suffix="+">0</strong>
+              <span class="stat__label">Projetos entregues</span>
+            </div>
+            <div class="stat-card">
+              <strong class="stat__num" data-count="6" data-suffix="">0</strong>
+              <span class="stat__label">Produtos próprios</span>
+            </div>
+            <div class="stat-card">
+              <strong class="stat__num" data-count="8" data-suffix=" anos">0</strong>
+              <span class="stat__label">De experiência</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero__visual reveal" data-reveal>
+          <div class="hero__ring" aria-hidden="true"></div>
+          <div class="hero__showcase">
+            <div class="hero__showcase-top">
+              <span class="hero__showcase-label">Dashboard MB Systems</span>
+              <span class="hero__showcase-live"><span></span> Online</span>
+            </div>
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=720&h=420&fit=crop&auto=format&q=80" alt="Painel de gestão MB Systems" loading="eager" />
+            <div class="hero__showcase-bar">
+              <span style="width:78%"></span>
+              <span style="width:92%"></span>
+              <span style="width:65%"></span>
+            </div>
+          </div>
+
+          <div class="hero__card hero__card--code glass">
+            <div class="window-dots"><span></span><span></span><span></span></div>
+            <pre class="code-block"><code><span class="c-key">const</span> <span class="c-var">mbSystem</span> = {
+  <span class="c-prop">missao</span>: <span class="c-str">"tecnologia que gera valor"</span>,
+  <span class="c-prop">stack</span>: [<span class="c-str">"ERP"</span>, <span class="c-str">"Web"</span>, <span class="c-str">"Cloud"</span>],
+  <span class="c-prop">entrega</span>: <span class="c-fn">()</span> => <span class="c-str">"excelência"</span>,
+};</code></pre>
+          </div>
+
+          <div class="hero__floating glass float-a">
+            <span class="hero__float-icon">⚡</span>
+            <span><small>Performance</small><strong>99.9% Uptime</strong></span>
+          </div>
+          <div class="hero__floating glass float-b">
+            <span class="hero__float-icon">🎯</span>
+            <span><small>Qualidade</small><strong>UI/UX Premium</strong></span>
+          </div>
+          <div class="hero__floating glass float-c">
+            <span class="hero__float-icon">🚀</span>
+            <span><small>Entrega</small><strong>Ágil & Segura</strong></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="container hero__clients reveal" data-reveal>
+        <span class="hero__clients-label">Empresas que confiam na MB System</span>
+        <div class="hero__clients-logos">
+          <a href="https://acometais.com.br" class="hero__client-link" target="_blank" rel="noopener noreferrer" title="Açometais — acometais.com.br">
+            <img src="assets/img/clients/acometais.jpg" data-fallback="assets/img/clients/acometais.svg" alt="Logo Açometais" loading="lazy" />
+          </a>
+          <a href="https://artvalora.com" class="hero__client-link" target="_blank" rel="noopener noreferrer" title="Artvalora — artvalora.com">
+            <img src="assets/img/clients/artvalora.png" data-fallback="assets/img/clients/artvalora.svg" alt="Logo Artvalora" loading="lazy" />
+          </a>
+          <a href="https://www.instagram.com/draanahoeckler/" class="hero__client-link" target="_blank" rel="noopener noreferrer" title="Clínica Ana Hoeckler — Instagram">
+            <img src="assets/img/clients/ana-hoeckler.png" data-fallback="assets/img/clients/ana-hoeckler.svg" alt="Logo Clínica Ana Hoeckler" loading="lazy" />
+          </a>
+          <a href="https://querolar.com.br" class="hero__client-link" target="_blank" rel="noopener noreferrer" title="Querolar — querolar.com.br">
+            <img src="assets/img/clients/querolar.jpg" data-fallback="assets/img/clients/querolar.svg" alt="Logo Querolar" loading="lazy" />
+          </a>
+        </div>
+      </div>
+
+      <a href="#sobre" class="scroll-cue" aria-label="Rolar para baixo">
+        <span class="mouse"><span></span></span>
+      </a>
+    </section>
+
+    <!-- ===== MARQUEE / CLIENTES TOPO ===== -->
+    <section class="marquee-wrap" aria-label="Tecnologias que dominamos">
+      <div class="marquee">
+        <div class="marquee__track">
+          <span>JavaScript</span><span>•</span><span>React</span><span>•</span><span>Node.js</span><span>•</span>
+          <span>Python</span><span>•</span><span>TypeScript</span><span>•</span><span>Flutter</span><span>•</span>
+          <span>AWS</span><span>•</span><span>Docker</span><span>•</span><span>SQL</span><span>•</span>
+          <span>UI/UX Design</span><span>•</span>
+          <span>JavaScript</span><span>•</span><span>React</span><span>•</span><span>Node.js</span><span>•</span>
+          <span>Python</span><span>•</span><span>TypeScript</span><span>•</span><span>Flutter</span><span>•</span>
+          <span>AWS</span><span>•</span><span>Docker</span><span>•</span><span>SQL</span><span>•</span>
+          <span>UI/UX Design</span><span>•</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SOBRE ===== -->
+    <section class="section" id="sobre">
+      <div class="container">
+        <div class="grid-2">
+          <div class="reveal" data-reveal>
+            <span class="eyebrow">Sobre a MB System</span>
+            <h2 class="section__title">Tecnologia com propósito, resultado de verdade.</h2>
+            <p class="section__text">
+              Somos uma empresa de tecnologia especializada em desenvolver soluções
+              digitais que combinam <strong>estratégia, design e engenharia</strong>.
+              Trabalhamos lado a lado com nossos clientes para entender o desafio
+              e entregar produtos que realmente fazem a diferença.
+            </p>
+            <p class="section__text">
+              Da concepção ao lançamento, cuidamos de cada detalhe com foco em
+              qualidade, escalabilidade e experiência do usuário.
+            </p>
+
+            <ul class="check-list">
+              <li><span class="check">✓</span> Atendimento próximo e consultivo</li>
+              <li><span class="check">✓</span> Código limpo, seguro e escalável</li>
+              <li><span class="check">✓</span> Entregas no prazo com transparência</li>
+              <li><span class="check">✓</span> Suporte e evolução contínua</li>
+            </ul>
+
+            <a href="#contato" class="btn btn--primary">Vamos conversar</a>
+          </div>
+
+          <div class="reveal" data-reveal>
+            <div class="about-cards">
+              <article class="mini-card glass">
+                <div class="mini-card__icon">🎯</div>
+                <h3>Missão</h3>
+                <p>Transformar negócios através de tecnologia inteligente e acessível.</p>
+              </article>
+              <article class="mini-card glass">
+                <div class="mini-card__icon">🔭</div>
+                <h3>Visão</h3>
+                <p>Ser referência em soluções digitais de alto padrão no mercado.</p>
+              </article>
+              <article class="mini-card glass">
+                <div class="mini-card__icon">💎</div>
+                <h3>Valores</h3>
+                <p>Excelência, transparência, inovação e compromisso com o cliente.</p>
+              </article>
+              <article class="mini-card glass">
+                <div class="mini-card__icon">⚡</div>
+                <h3>Diferencial</h3>
+                <p>Velocidade de entrega sem abrir mão de qualidade e design.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== SERVIÇOS ===== -->
+    <section class="section section--alt" id="servicos">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="eyebrow">O que fazemos</span>
+          <h2 class="section__title">Serviços que impulsionam o seu negócio</h2>
+          <p class="section__text section__text--center">
+            Soluções completas, do planejamento à entrega, com tecnologia de ponta.
+          </p>
+        </header>
+
+        <div class="cards-grid">
+          <article class="service-card reveal" data-reveal>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path d="M3 5h18v12H3z M8 21h8M12 17v4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Desenvolvimento Web</h3>
+            <p>Sites, landing pages e sistemas web rápidos, responsivos e otimizados para SEO.</p>
+            <span class="service-card__glow"></span>
+          </article>
+
+          <article class="service-card reveal" data-reveal>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" width="28" height="28"><rect x="7" y="2" width="10" height="20" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M11 18h2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Aplicativos Mobile</h3>
+            <p>Apps Android e iOS com experiência fluida, design moderno e alta performance.</p>
+            <span class="service-card__glow"></span>
+          </article>
+
+          <article class="service-card reveal" data-reveal>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path d="M4 17V7l8-4 8 4v10l-8 4z M12 3v18M4 7l8 4 8-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Sistemas sob medida</h3>
+            <p>ERPs, CRMs e plataformas personalizadas para automatizar seus processos.</p>
+            <span class="service-card__glow"></span>
+          </article>
+
+          <article class="service-card reveal" data-reveal>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path d="M12 3a9 9 0 1 0 9 9M21 3l-9 9" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>UI/UX Design</h3>
+            <p>Interfaces bonitas e intuitivas, pensadas para encantar e converter usuários.</p>
+            <span class="service-card__glow"></span>
+          </article>
+
+          <article class="service-card reveal" data-reveal>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path d="M12 2v4m0 12v4M2 12h4m12 0h4M5 5l3 3m8 8 3 3M5 19l3-3m8-8 3-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            </div>
+            <h3>Automação & Integrações</h3>
+            <p>Conecte sistemas, elimine tarefas manuais e ganhe eficiência com automação.</p>
+            <span class="service-card__glow"></span>
+          </article>
+
+          <article class="service-card reveal" data-reveal>
+            <div class="service-card__icon">
+              <svg viewBox="0 0 24 24" width="28" height="28"><path d="M12 3 3 7v6c0 5 4 7 9 8 5-1 9-3 9-8V7z M9 12l2 2 4-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3>Consultoria & Cloud</h3>
+            <p>Arquitetura, segurança e infraestrutura em nuvem para escalar com confiança.</p>
+            <span class="service-card__glow"></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== COMPETÊNCIAS ===== -->
+    <section class="section" id="competencias">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="eyebrow">Nossas competências</span>
+          <h2 class="section__title">Domínio técnico de ponta a ponta</h2>
+        </header>
+
+        <div class="grid-2 grid-2--skills">
+          <div class="reveal" data-reveal>
+            <div class="skill">
+              <div class="skill__head"><span>Front-end & Interfaces</span><span>95%</span></div>
+              <div class="skill__bar"><span data-skill="95"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__head"><span>Back-end & APIs</span><span>92%</span></div>
+              <div class="skill__bar"><span data-skill="92"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__head"><span>Mobile (Android/iOS)</span><span>88%</span></div>
+              <div class="skill__bar"><span data-skill="88"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__head"><span>Cloud & DevOps</span><span>85%</span></div>
+              <div class="skill__bar"><span data-skill="85"></span></div>
+            </div>
+            <div class="skill">
+              <div class="skill__head"><span>UI/UX & Design</span><span>90%</span></div>
+              <div class="skill__bar"><span data-skill="90"></span></div>
+            </div>
+          </div>
+
+          <div class="reveal" data-reveal>
+            <div class="tech-grid">
+              <span class="tech-chip">JavaScript</span>
+              <span class="tech-chip">TypeScript</span>
+              <span class="tech-chip">React</span>
+              <span class="tech-chip">Vue</span>
+              <span class="tech-chip">Node.js</span>
+              <span class="tech-chip">Python</span>
+              <span class="tech-chip">PHP / Laravel</span>
+              <span class="tech-chip">Flutter</span>
+              <span class="tech-chip">React Native</span>
+              <span class="tech-chip">PostgreSQL</span>
+              <span class="tech-chip">MySQL</span>
+              <span class="tech-chip">MongoDB</span>
+              <span class="tech-chip">AWS</span>
+              <span class="tech-chip">Docker</span>
+              <span class="tech-chip">Figma</span>
+              <span class="tech-chip">Git</span>
+            </div>
+
+            <div class="process glass">
+              <h3>Como trabalhamos</h3>
+              <ol class="process__list">
+                <li><span>01</span> Descoberta & planejamento</li>
+                <li><span>02</span> Design & prototipação</li>
+                <li><span>03</span> Desenvolvimento & testes</li>
+                <li><span>04</span> Lançamento & evolução</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PRODUTOS MB SYSTEMS ===== -->
+    <section class="section" id="produtos">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="eyebrow">Produtos MB Systems</span>
+          <h2 class="section__title">Soluções próprias da nossa empresa</h2>
+          <p class="section__text section__text--center">
+            Plataformas desenvolvidas e mantidas pela MB Systems — prontas para escalar o seu negócio.
+          </p>
+        </header>
+
+        <div class="products-grid">
+          <article class="product-card reveal" data-reveal>
+            <div class="product-card__media">
+              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=340&fit=crop&q=80" alt="ProntoTraduz" loading="lazy" />
+              <span class="product-card__badge">Produto MB</span>
+            </div>
+            <div class="product-card__body">
+              <h3>ProntoTraduz</h3>
+              <p>Plataforma de tradução e processamento inteligente de conteúdos corporativos.</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-reveal>
+            <div class="product-card__media">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=340&fit=crop&q=80" alt="Atlas ERP" loading="lazy" />
+              <span class="product-card__badge">Produto MB</span>
+            </div>
+            <div class="product-card__body">
+              <h3>Atlas ERP</h3>
+              <p>ERP completo com foco em gestão financeira, relatórios e controle empresarial.</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-reveal>
+            <div class="product-card__media">
+              <img src="https://images.unsplash.com/photo-1639322537504-6427a16b0a28?w=600&h=340&fit=crop&q=80" alt="ArtMonitor" loading="lazy" />
+              <span class="product-card__badge">Produto MB</span>
+            </div>
+            <div class="product-card__body">
+              <h3>ArtMonitor</h3>
+              <p>Monitoramento inteligente para ERP com alertas, métricas e visão em tempo real.</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-reveal>
+            <div class="product-card__media">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=340&fit=crop&q=80" alt="MB Connect" loading="lazy" />
+              <span class="product-card__badge">Produto MB</span>
+            </div>
+            <div class="product-card__body">
+              <h3>MB Connect</h3>
+              <p>Plataforma de integração de sistemas, APIs e sincronização entre plataformas.</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-reveal>
+            <div class="product-card__media">
+              <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=340&fit=crop&q=80" alt="MB Demandas" loading="lazy" />
+              <span class="product-card__badge">Produto MB</span>
+            </div>
+            <div class="product-card__body">
+              <h3>MB Demandas</h3>
+              <p>Sistema corporativo de demandas com fluxos, prioridades e acompanhamento.</p>
+            </div>
+          </article>
+
+          <article class="product-card reveal" data-reveal>
+            <div class="product-card__media">
+              <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600&h=340&fit=crop&q=80" alt="MB Monitor" loading="lazy" />
+              <span class="product-card__badge">Produto MB</span>
+            </div>
+            <div class="product-card__body">
+              <h3>MB Monitor</h3>
+              <p>Monitoramento em tempo real de sistemas, serviços e indicadores operacionais.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS / PORTFÓLIO ===== -->
+    <section class="section section--alt" id="projetos">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="eyebrow">Portfólio</span>
+          <h2 class="section__title">Projetos que entregam resultado</h2>
+          <p class="section__text section__text--center">
+            Destaques dos principais projetos entregues — ERP, plataformas, integrações e produtos MB Systems.
+          </p>
+        </header>
+
+        <div class="filters reveal" data-reveal>
+          <button class="filter is-active" data-filter="all">Todos</button>
+          <button class="filter" data-filter="erp">ERP</button>
+          <button class="filter" data-filter="corporativo">Corporativo</button>
+          <button class="filter" data-filter="monitoramento">Monitoramento</button>
+          <button class="filter" data-filter="integracao">Integrações</button>
+          <button class="filter" data-filter="automacao">Automação</button>
+          <button class="filter" data-filter="bi">BI / Dashboards</button>
+          <button class="filter" data-filter="seguranca">Segurança</button>
+          <button class="filter" data-filter="web">Web</button>
+        </div>
+
+        <div class="portfolio" id="portfolio">
+
+          <!-- ERP -->
+          <article class="project reveal" data-reveal data-category="erp" data-featured>
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=340&fit=crop&q=80" alt="ERP Açometais" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">ERP</span>
+              <h3>ERP Açometais</h3>
+              <p>Sistema ERP completo para gestão industrial e operacional.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="erp" data-featured>
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=340&fit=crop&q=80" alt="Atlas ERP" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">ERP</span>
+              <h3>Atlas ERP</h3>
+              <p>Gestão financeira, relatórios e controle empresarial integrado.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="erp" data-featured>
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=340&fit=crop&q=80" alt="Artvalora ERP" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">ERP</span>
+              <h3>Artvalora ERP</h3>
+              <p>ERP customizado para gestão e operação do cliente Artvalora.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="erp" data-featured>
+            <div class="project__media">
+              <img src="assets/img/projects/querolar-erp.png" alt="ERP Imobiliário Querolar" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">ERP</span>
+              <h3>ERP Imobiliário (Querolar)</h3>
+              <p>Gestão de imóveis, contratos e operação imobiliária completa.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="erp">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=340&fit=crop&q=80" alt="Gestão Documental ERP" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">ERP</span>
+              <h3>Sistema de Gestão Documental</h3>
+              <p>ERP para controle, organização e rastreio de documentos corporativos.</p>
+            </div>
+          </article>
+
+          <!-- Corporativo -->
+          <article class="project reveal" data-reveal data-category="corporativo" data-featured>
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?w=600&h=340&fit=crop&q=80" alt="Sistema Corporativo de Demandas" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Corporativo</span>
+              <h3>Sistema Corporativo de Demandas</h3>
+              <p>Gestão de solicitações internas com fluxos e priorização.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="corporativo">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=340&fit=crop&q=80" alt="Plataforma Administrativa MB Systems" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Corporativo</span>
+              <h3>Plataforma Administrativa MB Systems</h3>
+              <p>Painel central de administração e operação da MB Systems.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="corporativo">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=600&h=340&fit=crop&q=80" alt="Portal Administrativo Django" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Corporativo</span>
+              <h3>Portal Administrativo em Django</h3>
+              <p>Portal robusto com painel admin, permissões e gestão de dados.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="corporativo">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=600&h=340&fit=crop&q=80" alt="Gestão de Usuários" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Corporativo</span>
+              <h3>Sistema de Gestão de Usuários</h3>
+              <p>Controle de acessos, perfis, permissões e autenticação.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="corporativo">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=600&h=340&fit=crop&q=80" alt="Gestão de Colaboradores" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Corporativo</span>
+              <h3>Sistema de Gestão de Colaboradores</h3>
+              <p>Cadastro, equipes, cargos e acompanhamento de colaboradores.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="corporativo">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=600&h=340&fit=crop&q=80" alt="Gestão de Imóveis" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Corporativo</span>
+              <h3>Sistema de Gestão de Imóveis</h3>
+              <p>Controle de propriedades, locações e documentação imobiliária.</p>
+            </div>
+          </article>
+
+          <!-- Monitoramento -->
+          <article class="project reveal" data-reveal data-category="monitoramento" data-featured>
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1614064641938-3bbee52942c7?w=600&h=340&fit=crop&q=80" alt="ArtMonitor" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Monitoramento</span>
+              <h3>ArtMonitor</h3>
+              <p>Monitoramento inteligente para ERP com alertas e métricas.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="monitoramento">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=600&h=340&fit=crop&q=80" alt="ERP Monitor" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Monitoramento</span>
+              <h3>ERP Monitor</h3>
+              <p>Monitoramento em tempo real de processos e sistemas ERP.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="monitoramento">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=340&fit=crop&auto=format&q=80" alt="Dashboard de Monitoramento" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Monitoramento</span>
+              <h3>Dashboard de Monitoramento Corporativo</h3>
+              <p>Painel executivo com indicadores e status operacionais.</p>
+            </div>
+          </article>
+
+          <!-- Integrações -->
+          <article class="project reveal" data-reveal data-category="integracao" data-featured>
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=600&h=340&fit=crop&q=80" alt="Integração CIGAM ERP" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Integração</span>
+              <h3>Integração CIGAM ERP</h3>
+              <p>Conexão e sincronização de dados com o ERP CIGAM.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="integracao" data-featured>
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1639322537504-6427a16b0a28?w=600&h=340&fit=crop&q=80" alt="MB Connect" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Integração</span>
+              <h3>MB Connect</h3>
+              <p>Plataforma de integração entre sistemas, APIs e serviços.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="integracao">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=600&h=340&fit=crop&q=80" alt="Integração Firebase Django" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Integração</span>
+              <h3>Integração Firebase ↔ Django</h3>
+              <p>Sincronização de autenticação e dados entre Firebase e Django.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="integracao">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1593720213428-28a5b9e94613?w=600&h=340&fit=crop&q=80" alt="Integração APIs REST" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Integração</span>
+              <h3>Integração APIs REST</h3>
+              <p>Desenvolvimento e consumo de APIs REST para sistemas corporativos.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="integracao">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=340&fit=crop&q=80" alt="Sincronização em Tempo Real" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Integração</span>
+              <h3>Sincronização em Tempo Real</h3>
+              <p>Fluxos de dados instantâneos entre plataformas e bancos de dados.</p>
+            </div>
+          </article>
+
+          <!-- Automação -->
+          <article class="project reveal" data-reveal data-category="automacao" data-featured>
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=340&fit=crop&q=80" alt="ProntoTraduz" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Automação</span>
+              <h3>ProntoTraduz</h3>
+              <p>Automação inteligente de tradução e processamento de textos.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="automacao">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=340&fit=crop&q=80" alt="Plataforma de Automações" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Automação</span>
+              <h3>Plataforma de Automações Empresariais</h3>
+              <p>Automação de rotinas, tarefas e processos internos.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="automacao">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=600&h=340&fit=crop&q=80" alt="Processamento Automatizado" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Automação</span>
+              <h3>Sistema de Processamento Automatizado</h3>
+              <p>Pipeline automatizado para processamento e validação de dados.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="automacao">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=340&fit=crop&q=80" alt="Automação de Fluxos" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Automação</span>
+              <h3>Automação de Fluxos Corporativos</h3>
+              <p>Workflows automatizados para aprovações e processos internos.</p>
+            </div>
+          </article>
+
+          <!-- BI / Dashboards -->
+          <article class="project reveal" data-reveal data-category="bi">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=600&h=340&fit=crop&q=80" alt="Dashboard Executivo" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">BI / Dashboard</span>
+              <h3>Dashboard Executivo</h3>
+              <p>Visão estratégica com KPIs e indicadores para tomada de decisão.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="bi">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1554224155-8d04cb21cd6c?w=600&h=340&fit=crop&q=80" alt="Dashboard Financeiro" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">BI / Dashboard</span>
+              <h3>Dashboard Financeiro</h3>
+              <p>Controle financeiro com gráficos, metas e relatórios dinâmicos.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="bi">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=600&h=340&fit=crop&q=80" alt="Dashboard de Indicadores" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">BI / Dashboard</span>
+              <h3>Dashboard de Indicadores</h3>
+              <p>Painel analítico com métricas operacionais e de performance.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="bi">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=340&fit=crop&q=80" alt="Painel Analítico" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">BI / Dashboard</span>
+              <h3>Painel Analítico Empresarial</h3>
+              <p>Business Intelligence com dados consolidados e visualizações.</p>
+            </div>
+          </article>
+
+          <!-- Segurança -->
+          <article class="project reveal" data-reveal data-category="seguranca">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1563986768609-322da13575f3?w=600&h=340&fit=crop&q=80" alt="Validação de Documentos" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Segurança</span>
+              <h3>Sistema de Validação de Documentos</h3>
+              <p>Verificação, autenticação e controle de documentos corporativos.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="seguranca">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=600&h=340&fit=crop&q=80" alt="Controle de Aprovação" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Segurança</span>
+              <h3>Controle de Aprovação Documental</h3>
+              <p>Fluxos de aprovação com rastreio e auditoria de documentos.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="seguranca">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?w=600&h=340&fit=crop&q=80" alt="Gestão de Arquivos" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Segurança</span>
+              <h3>Gestão de Arquivos Corporativos</h3>
+              <p>Armazenamento seguro, versionamento e controle de acesso a arquivos.</p>
+            </div>
+          </article>
+
+          <!-- Web -->
+          <article class="project reveal" data-reveal data-category="web">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=600&h=340&fit=crop&q=80" alt="Portfólio MB Systems" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Web</span>
+              <h3>Portfólio MB Systems</h3>
+              <p>Site portfólio institucional com design moderno e responsivo.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="web">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?w=600&h=340&fit=crop&q=80" alt="Site Institucional MB Systems" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Web</span>
+              <h3>Site Institucional MB Systems</h3>
+              <p>Presença digital corporativa com foco em conversão e credibilidade.</p>
+            </div>
+          </article>
+
+          <article class="project reveal" data-reveal data-category="web">
+            <div class="project__media">
+              <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=600&h=340&fit=crop&q=80" alt="Landing Pages Corporativas" loading="lazy" />
+              <span class="project__status">Entregue</span>
+            </div>
+            <div class="project__body">
+              <span class="project__tag">Web</span>
+              <h3>Landing Pages Corporativas</h3>
+              <p>Páginas de alta conversão para campanhas e captação de leads.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <div class="portfolio-actions reveal" data-reveal>
+          <button type="button" class="btn btn--ghost" id="portfolioToggle" aria-expanded="false">
+            <span class="portfolio-toggle-label">Ver mais projetos</span>
+            <span class="portfolio-toggle-count">(+26)</span>
+          </button>
+        </div>
+
+        <p class="portfolio-count reveal" data-reveal>35 projetos entregues com sucesso ✅</p>
+      </div>
+    </section>
+
+    <!-- ===== PROJETOS FUTUROS ===== -->
+    <section class="section" id="futuro">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="eyebrow">Roadmap</span>
+          <h2 class="section__title">Próximos lançamentos</h2>
+          <p class="section__text section__text--center">
+            Produtos e soluções em desenvolvimento — a evolução continua.
+          </p>
+        </header>
+
+        <div class="roadmap-grid">
+          <article class="roadmap-card reveal" data-reveal>
+            <div class="roadmap-card__media">
+              <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&h=340&fit=crop&auto=format&q=80" alt="Agenda Corporativa" loading="lazy" />
+              <span class="roadmap-card__tag">Em breve</span>
+            </div>
+            <div class="roadmap-card__body">
+              <h3>Agenda Corporativa</h3>
+              <p>Calendário inteligente com integração a sistemas e equipes.</p>
+            </div>
+          </article>
+
+          <article class="roadmap-card reveal" data-reveal>
+            <div class="roadmap-card__media">
+              <img src="https://images.unsplash.com/photo-1485827404703-89b55fcc595e?w=600&h=340&fit=crop&auto=format&q=80" alt="Assistente IA para Empresas" loading="lazy" />
+              <span class="roadmap-card__tag">Em breve</span>
+            </div>
+            <div class="roadmap-card__body">
+              <h3>Assistente IA para Empresas</h3>
+              <p>IA corporativa para atendimento, análise e automação inteligente.</p>
+            </div>
+          </article>
+
+          <article class="roadmap-card reveal" data-reveal>
+            <div class="roadmap-card__media">
+              <img src="https://images.unsplash.com/photo-1629654297299-c8506221ca97?w=600&h=340&fit=crop&auto=format&q=80" alt="MB Analytics" loading="lazy" />
+              <span class="roadmap-card__tag">Em breve</span>
+            </div>
+            <div class="roadmap-card__body">
+              <h3>MB Analytics</h3>
+              <p>Plataforma de analytics avançado com BI e relatórios preditivos.</p>
+            </div>
+          </article>
+
+          <article class="roadmap-card reveal" data-reveal>
+            <div class="roadmap-card__media">
+              <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?w=600&h=340&fit=crop&auto=format&q=80" alt="Aplicativos Mobile" loading="lazy" />
+              <span class="roadmap-card__tag">Em breve</span>
+            </div>
+            <div class="roadmap-card__body">
+              <h3>Aplicativos Mobile</h3>
+              <p>Apps nativos para Android e iOS integrados ao ecossistema MB.</p>
+            </div>
+          </article>
+
+          <article class="roadmap-card reveal" data-reveal>
+            <div class="roadmap-card__media">
+              <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=600&h=340&fit=crop&auto=format&q=80" alt="Plataforma SaaS MB Systems" loading="lazy" />
+              <span class="roadmap-card__tag">Em breve</span>
+            </div>
+            <div class="roadmap-card__body">
+              <h3>Plataforma SaaS MB Systems</h3>
+              <p>Solução completa em nuvem, pronta para escalar globalmente.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CLIENTES ===== -->
+    <section class="section" id="clientes">
+      <div class="container">
+        <header class="section__head reveal" data-reveal>
+          <span class="eyebrow">Quem confia na gente</span>
+          <h2 class="section__title">Empresas que crescem com a MB System</h2>
+        </header>
+
+        <div class="clients reveal" data-reveal>
+          <a href="https://acometais.com.br" class="client-logo" target="_blank" rel="noopener noreferrer" title="Açometais — acometais.com.br">
+            <img class="client-logo__img" src="assets/img/clients/acometais.jpg" data-fallback="assets/img/clients/acometais.svg" alt="Logo Açometais" loading="lazy" />
+            <span class="client-logo__text">Aço<strong>metais</strong></span>
+          </a>
+          <a href="https://artvalora.com" class="client-logo" target="_blank" rel="noopener noreferrer" title="Artvalora — artvalora.com">
+            <img class="client-logo__img" src="assets/img/clients/artvalora.png" data-fallback="assets/img/clients/artvalora.svg" alt="Logo Artvalora" loading="lazy" />
+            <span class="client-logo__text">Art<strong>valora</strong></span>
+          </a>
+          <a href="https://www.instagram.com/draanahoeckler/" class="client-logo" target="_blank" rel="noopener noreferrer" title="Clínica Ana Hoeckler — Instagram">
+            <img class="client-logo__img" src="assets/img/clients/ana-hoeckler.png" data-fallback="assets/img/clients/ana-hoeckler.svg" alt="Logo Clínica Ana Hoeckler" loading="lazy" />
+            <span class="client-logo__text">Clínica Ana<strong>Hoeckler</strong></span>
+          </a>
+          <a href="https://querolar.com.br" class="client-logo" target="_blank" rel="noopener noreferrer" title="Querolar — querolar.com.br">
+            <img class="client-logo__img" src="assets/img/clients/querolar.jpg" data-fallback="assets/img/clients/querolar.svg" alt="Logo Querolar" loading="lazy" />
+            <span class="client-logo__text">Quero<strong>lar</strong></span>
+          </a>
+        </div>
+
+        <!-- Depoimentos -->
+        <div class="testimonials reveal" data-reveal>
+          <h3 class="testimonials__title">O que os clientes dizem</h3>
+
+          <div class="testimonials-grid">
+            <figure class="testimonial-card">
+              <div class="testimonial-card__body">
+                <div class="testimonial-card__head">
+                  <span class="testimonial-card__company">Açometais</span>
+                  <span class="testimonial-card__stars">★★★★★</span>
+                </div>
+                <span class="testimonial-card__project">ERP Açometais</span>
+                <blockquote>A MB Systems desenvolveu nosso ERP com precisão e agilidade. Hoje temos controle total da operação industrial em um só lugar.</blockquote>
+                <figcaption>
+                  <span class="avatar">AC</span>
+                  <span><strong>Equipe Açometais</strong><small>Indústria • Cliente MB Systems</small></span>
+                </figcaption>
+              </div>
+            </figure>
+
+            <figure class="testimonial-card">
+              <div class="testimonial-card__body">
+                <div class="testimonial-card__head">
+                  <span class="testimonial-card__company">Artvalora</span>
+                  <span class="testimonial-card__stars">★★★★★</span>
+                </div>
+                <span class="testimonial-card__project">Artvalora ERP</span>
+                <blockquote>O ERP transformou nossa gestão. Sistema robusto, suporte próximo e entregas sempre dentro do prazo combinado.</blockquote>
+                <figcaption>
+                  <span class="avatar">AV</span>
+                  <span><strong>Equipe Artvalora</strong><small>Gestão • Cliente MB Systems</small></span>
+                </figcaption>
+              </div>
+            </figure>
+
+            <figure class="testimonial-card">
+              <div class="testimonial-card__body">
+                <div class="testimonial-card__head">
+                  <span class="testimonial-card__company">Clínica Ana Hoeckler</span>
+                  <span class="testimonial-card__stars">★★★★★</span>
+                </div>
+                <span class="testimonial-card__project">Presença digital & sistemas</span>
+                <blockquote>A presença digital da clínica ficou profissional e moderna. A MB Systems entendeu perfeitamente o que o nosso segmento precisava.</blockquote>
+                <figcaption>
+                  <span class="avatar">AH</span>
+                  <span><strong>Ana Hoeckler</strong><small>Clínica de Estética • Cliente MB Systems</small></span>
+                </figcaption>
+              </div>
+            </figure>
+
+            <figure class="testimonial-card">
+              <div class="testimonial-card__body">
+                <div class="testimonial-card__head">
+                  <span class="testimonial-card__company">Querolar</span>
+                  <span class="testimonial-card__stars">★★★★★</span>
+                </div>
+                <span class="testimonial-card__project">ERP Imobiliário</span>
+                <blockquote>A plataforma imobiliária ficou exatamente como precisávamos. Gestão de imóveis, contratos e equipe de forma integrada e eficiente.</blockquote>
+                <figcaption>
+                  <span class="avatar">QR</span>
+                  <span><strong>Equipe Querolar</strong><small>Imobiliária • Cliente MB Systems</small></span>
+                </figcaption>
+              </div>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== CTA ===== -->
+    <section class="cta-band">
+      <div class="container cta-band__inner reveal" data-reveal>
+        <h2>Pronto para tirar a sua ideia do papel?</h2>
+        <p>Vamos construir juntos a próxima grande solução do seu negócio.</p>
+        <a href="#contato" class="btn btn--light">Começar agora</a>
+      </div>
+    </section>
+
+    <!-- ===== CONTATO ===== -->
+    <section class="section" id="contato">
+      <div class="container">
+        <div class="grid-2 grid-2--contact">
+          <div class="reveal" data-reveal>
+            <span class="eyebrow">Contato</span>
+            <h2 class="section__title">Vamos conversar sobre o seu projeto</h2>
+            <p class="section__text">
+              Conte-nos o que você precisa. Respondemos rápido e sem compromisso.
+            </p>
+
+            <ul class="contact-info">
+              <li>
+                <span class="contact-info__icon">✉️</span>
+                <div><small>E-mail</small><a href="mailto:contato@mbsystem.com.br">contato@mbsystem.com.br</a></div>
+              </li>
+              <li>
+                <span class="contact-info__icon">📞</span>
+                <div><small>Telefone / WhatsApp</small><a href="https://wa.me/5500000000000" target="_blank" rel="noopener">+55 (00) 00000-0000</a></div>
+              </li>
+              <li>
+                <span class="contact-info__icon">📍</span>
+                <div><small>Localização</small><span>Brasil — atendimento remoto e presencial</span></div>
+              </li>
+            </ul>
+
+            <div class="socials">
+              <a href="#" class="social" aria-label="LinkedIn" title="LinkedIn">in</a>
+              <a href="#" class="social" aria-label="Instagram" title="Instagram">ig</a>
+              <a href="#" class="social" aria-label="GitHub" title="GitHub">gh</a>
+              <a href="https://wa.me/5500000000000" target="_blank" rel="noopener" class="social" aria-label="WhatsApp" title="WhatsApp">wa</a>
+            </div>
+          </div>
+
+          <div class="reveal" data-reveal>
+            <form class="contact-form glass" id="contactForm" novalidate>
+              <div class="field">
+                <input type="text" id="nome" name="nome" placeholder=" " required />
+                <label for="nome">Seu nome</label>
+              </div>
+              <div class="field">
+                <input type="email" id="email" name="email" placeholder=" " required />
+                <label for="email">Seu e-mail</label>
+              </div>
+              <div class="field">
+                <input type="text" id="assunto" name="assunto" placeholder=" " />
+                <label for="assunto">Assunto</label>
+              </div>
+              <div class="field">
+                <textarea id="mensagem" name="mensagem" rows="5" placeholder=" " required></textarea>
+                <label for="mensagem">Sua mensagem</label>
+              </div>
+              <button type="submit" class="btn btn--primary btn--block">Enviar mensagem</button>
+              <p class="form-feedback" id="formFeedback" role="status"></p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#hero" class="brand">
+          <img src="assets/img/logo.png" alt="MB System" class="brand__logo" />
+          <span class="brand__name">MB<span>System</span></span>
+        </a>
+        <p>Tecnologia que transforma negócios. Soluções digitais sob medida com design e performance.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Navegação</h4>
+        <a href="#sobre">Sobre</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#projetos">Projetos</a>
+        <a href="#clientes">Clientes</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Serviços</h4>
+        <a href="#servicos">Desenvolvimento Web</a>
+        <a href="#servicos">Aplicativos Mobile</a>
+        <a href="#servicos">Sistemas sob medida</a>
+        <a href="#servicos">UI/UX Design</a>
+      </div>
+
+      <div class="footer__col">
+        <h4>Contato</h4>
+        <a href="mailto:contato@mbsystem.com.br">contato@mbsystem.com.br</a>
+        <a href="https://wa.me/5500000000000" target="_blank" rel="noopener">+55 (00) 00000-0000</a>
+        <span>Brasil</span>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <div class="container footer__bottom-inner">
+        <p>© <span id="year"></span> MB System. Todos os direitos reservados.</p>
+        <p>Feito com <span class="heart">♥</span> e muito código.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Botão voltar ao topo -->
+  <button class="to-top" id="toTop" aria-label="Voltar ao topo">
+    <svg viewBox="0 0 24 24" width="20" height="20"><path d="M12 19V5m-7 7 7-7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
